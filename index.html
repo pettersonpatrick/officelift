@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Liter&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Main</title>
 </head>
@@ -11,15 +14,26 @@
     <div class="mainContainer">
         <!-- NAV BAR CONTAINER -->
         <nav class="navBar">
-            <div class="navOptions navImg">
+
+            <div class="titleNav">
+                <h3 id="nameLink"><a href="#">OFFICE LIFT</a></h3>
+            </div>
+
+            <ul class="navLinks">
+                <li><a class="homeLink" href="#">HOME</a></li>
+                <li><a class="aboutLink" href="#">ABOUT</a></li>
+                <li><a class="servLink" href="#">SERVICES</a></li>
+                <li><a class="contactLink" href="#">CONTACT US</a></li>
+            </ul>          
+            
+        </nav>
+        
+         <div class="logoContainer">
+            <div class="navImg">
                 <img alt="logo image" src="img">
             </div>
-            <a class="navOptions" href="#">Home</a>
-            <a class="navOptions" href="#">Services</a>
-            <a class="navOptions" href="#">Contact Us</a>
-        </nav>
+         </div>
 
-        <!-- COMPANY MESSAGE -->
         <div class="msgContainer"><h1 class="welcomeMsg">Hello Everyone, Welcome to Office Lift</h1></div>
 
         <div class="servicesContainer"><h1 class="servicesMsg">This is Our Services</h1></div>

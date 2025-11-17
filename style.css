@@ -65,25 +65,112 @@ a img {
 /* START OF PAGE MAIN STYLES */
 
 .mainContainer {
+    background-color: rgb(254, 254, 254);
     display: grid;
     grid-gap: 5px;
-    grid-template-columns: 1fr 2fr 2fr 1fr;
-    grid-template-rows: 10vh 25vh 55vh 10vh;
+    grid-template-columns: 1fr 3fr 2fr 1fr;
+    grid-template-rows: 15vh 30vh 45vh 8.7vh;
     grid-template-areas: 
         'navbar navbar navbar navbar'
-        'msg msg msg msg'
-        'services services form form'
+        'logo msg form form'
+        'logo services form form'
         'footer footer footer footer'
     ; 
 }
 
+/* NAVBAR STYLES START HERE */
 .navBar {
+    /* background-color: #E67E22; */
+    display: flex;
+    flex-direction: row;
     grid-area: navbar;
-    background-color: #E67E22;
+    border-bottom: 1px solid rgb(39,51,49);
+    
+    
 
 }
 
+.titleNav {
+    color: rgb(39,51,49);
+    align-content: baseline;
+    line-height: 2;
+    /* background-color: pink; */
+    flex-basis: 50%;
+    font-size: 3em;
+    text-align: end;
+    padding-right: 1.5em;
+    order: 2;
+      
+    
+}
 
+.titleNav a {
+    font-size: 1.3em;
+    font-family: "PLayfair Display SC", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.navLinks {
+    align-items: end;
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+    order: 1;
+    
+
+}
+
+.navLinks a:hover{
+   color: #FFA266;
+      
+}
+
+#nameLink :hover{
+    color: rgb(71,93,57);
+}
+
+.navLinks, a{
+    text-decoration: none;
+    font-size: 1.5em;
+    color:#0e1111;
+    font-family: "Questrial", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.homeLink{
+    /* background-color: silver;         */
+
+}
+
+.aboutLink {
+    /* background-color: aliceblue;     */
+    
+}
+
+.servLink{
+    /* background-color: #E67E22;    */
+    
+}
+
+.contactLink {
+    /* background-color: greenyellow; */
+      
+}
+
+/* END OF NAV BAR STYLES */
+
+.navImg {
+    background-color: pink;
+}
+
+.logoContainer{
+    grid-area: logo;
+    background-color: green;
+}
 .msgContainer {
     grid-area: msg;
     background-color: #EBD5AB;
